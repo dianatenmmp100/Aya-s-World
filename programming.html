@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="222.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+    <link href="222.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <style>
+        :root {
+            --main-color: #3498db;
+        }
+
+        .additional-element {
+            width: 50px;
+            height: 50px;
+            background-color: var(--main-color);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+</head>
+    <h1>Welcome to the Programming Page</h1>
+<body>
+
+    <header>
+      <div class="container">
+            <div class="circle"></div>
+            <div class="square"></div>
+        </div>
+    </header>
+    <p>This demonstrates the movement and flow of ninja.</p>
+      <div id="additionalElement" class="additional-element"></div>
+<script>
+        document.addEventListener('mousemove', function(event) {
+            var element = document.getElementById('additionalElement');
+            element.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            element.style.left = event.clientX - element.offsetWidth / 2 + 'px';
+            element.style.top = event.clientY - element.offsetHeight / 2 + 'px';
+        });
+    </script>
+</body>
+</html>
+<ul>
+    <li><a href="index.html">Home page</a></li>
+</ul>
+</body>
+</html>
